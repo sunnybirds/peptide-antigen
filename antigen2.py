@@ -5,7 +5,6 @@ from keras.optimizers import RMSprop
 import numpy
 # fix random seed for reproducibility
 numpy.random.seed(7)
-# load pima indians dataset
 dataset = numpy.loadtxt("antigen-score.txt", delimiter=",")
 # split into input (X) and output (Y) variables
 X = dataset[:,0:600]

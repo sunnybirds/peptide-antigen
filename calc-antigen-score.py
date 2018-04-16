@@ -7,12 +7,6 @@ model = load_model('antigen.h5')
 
 json_string = model.to_json()
 print(json_string)
-'''
-pred = my_model.predict([[3] [''] [123]])  
-print('Label of testing sample', np.argmax(y_test_0))  
-print('Output of the softmax layer', pred[0])  
-print('Network prediction:', np.argmax([pred[0]]))  
-'''
 
 def word2vector(seq):
     aai = {}
@@ -61,15 +55,3 @@ for x in xx:
     #print(x)
     print(get_score(x))
     break;
-
-
-
-# dataset = np.loadtxt("test.txt", delimiter=",")
-# # split into input (X) and output (Y) variables
-# print(dataset)
-# X = dataset[:,0:600]
-# print(X)
-# print(X.shape)
-# xx = model.predict(X)
-# for x in xx:
-#     print(get_score(x))
